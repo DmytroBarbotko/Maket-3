@@ -1,0 +1,55 @@
+:root {
+    --BrightYellow: hsl(71, 73%, 54%);
+    --Cyan: hsl(179, 62%, 43%);
+    --LightGray: hsl(204, 43%, 93%);
+    --GrayishBlue: hsl(218, 22%, 67%);
+    --White: #fff;
+}
+
+body {
+    background-color: hsl(204, 43%, 93%);
+    height: 100vh;
+}
+
+.main_grid_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 300px);
+
+    grid-auto-columns: minmax(300, 350px);
+    grid-auto-rows: minmax(100, 200px);
+}
+
+.grid_item_first {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: var(--White);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.grid_item_second {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: hsl(179, 62%, 43%);
+    border-bottom-left-radius: 10px;
+}
+
+.grid_item_third {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: hsl(179, 81%, 60%);
+    border-bottom-right-radius: 10px;
+}
+
+h2 {
+    color: hsl(179, 62%, 43%);
+}
+
+.par1 {
+    color: var(--BrightYellow)
+}
